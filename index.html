@@ -7,17 +7,49 @@
     <title>Grid Dashboard</title>
     <link rel="stylesheet" href="./output.css">
 </head>
-<body>
-    <header>
-        <div>
-            <input type="search">
-            <div>
-                <img src="" alt="">
-                <h2>Morgan Oakley</h2>
+<body class="grid grid-cols-[minmax(0,_1fr)_minmax(0,_4fr)] text-slate-700">
+    <header class="shadow-lg col-start-2 p-4">
+        <div class="flex gap-56">
+            <div class="flex gap-4 items-center flex-1">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input placeholder="Search..." class="bg-slate-200 py-1 px-3 outline-0 outline-none rounded-3xl flex-1 transition-all hover:bg-slate-300 hover:placeholder:text-slate-600 focus-visible:ring-2 focus-visible:ring-slate-700 focus-visible:bg-slate-100 caret-slate-700" type="search">
+            </div>
+            <div class="flex items-center gap-3">
+                <button class="relative grid grid-cols-2">
+                    <span class="relative flex h-2 w-2 col-start-2">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-sky-500"></span>
+                    </span>
+                    <i class="fa-regular fa-bell text-base col-start-1 row-start-1"></i>
+                </button>
+                <img
+                    class="w-8"
+                    src="https://api.dicebear.com/5.x/bottts-neutral/svg?seed=Morgan&radius=50&flip=false"
+                    alt="avatar"
+                />
+                <h2 class="font-bold text-sm">Morgan Oakley</h2>
+            </div>
+        </div>
+        <div class="pt-8 flex justify-between items-center">
+            <div class="grid grid-cols-[minmax(0,_1fr)_minmax(0,_4fr)] gap-3">
+                <img
+                    class="w-14"
+                    src="https://api.dicebear.com/5.x/bottts-neutral/svg?seed=Morgan&radius=50&flip=false"
+                    alt="avatar"
+                />
+                <div class="font-bold">
+                    <small>Hi there,</small>
+                    <h2>Morgan Oakley (@morgan)</h2>
+                </div>
+            </div>
+            <div class="flex gap-8">
+                <button class="bg-sky-600 px-8 py-2 rounded-3xl text-white font-bold hover:bg-sky-500 active:bg-sky-700 transition-all">New</button>
+                <button class="bg-sky-600 px-8 py-2 rounded-3xl text-white font-bold hover:bg-sky-500 active:bg-sky-700 transition-all">Upload</button>
+                <button class="bg-sky-600 px-8 py-2 rounded-3xl text-white font-bold hover:bg-sky-500 active:bg-sky-700 transition-all">Share</button>
             </div>
         </div>
     </header>
-    <aside>
+    <aside class="border border-red-600 row-start-1 row-end-3">
         <div>
             <h1>Dashboard</h1>
         </div>
@@ -35,9 +67,9 @@
             <li>Privacy</li>
         </ul>
     </aside>
-    <main>
-        <h2>Your Projects</h2>
-        <div>
+    <main class="grid grid-cols-[minmax(0,_4fr)_minmax(0,_1fr)]">
+        <div class="border border-red-400">
+            <h2>Your Projects</h2>
             <article>Super cool project</article>
             <article>Less cool project</article>
             <article>Impossible app</article>
@@ -45,7 +77,7 @@
             <article>Ad Blocker</article>
             <article>Money Maker</article>
         </div>
-        <div>
+        <div class="border border-red-600">
             <h2>Announcements</h2>
             <div>
                 <article>Site Maintenance</article>
@@ -61,5 +93,6 @@
             </div>
         </div>
     </main>
+    <script src="https://kit.fontawesome.com/eb34185c6d.js" crossorigin="anonymous"></script>
 </body>
 </html>
