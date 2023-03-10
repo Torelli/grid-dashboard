@@ -7,7 +7,7 @@
     <title>Grid Dashboard</title>
     <link rel="stylesheet" href="./output.css">
 </head>
-<body class="grid grid-cols-[minmax(0,_1fr)_minmax(0,_4fr)] grid-rows-[minmax(0,_1fr)_minmax(0,_4fr)] text-slate-700">
+<body class="grid grid-cols-[minmax(0,_1fr)_minmax(0,_4fr)] grid-rows-[minmax(0,_1fr)_minmax(0,_6fr)] text-slate-700">
     <header class="shadow-lg col-start-2 px-8 py-4">
         <div class="flex gap-0 md:gap-56 flex-wrap-reverse">
             <div class="flex gap-4 items-center flex-1">
@@ -49,7 +49,7 @@
             </div>
         </div>
     </header>
-    <aside class="bg-sky-600 text-lg text-white font-bold flex flex-col space-y-8 row-start-1 row-end-3">
+    <aside class="bg-sky-600 text-lg text-white font-bold flex flex-col space-y-8 row-start-1 row-end-3 order-2">
         <div>
             <h1 class="p-6 text-2xl">
                 <i class="fa-solid fa-wave-square text-3xl"></i>
@@ -57,7 +57,7 @@
             </h1>
         </div>
         <ul class="w-full">
-            <li class="w-full">
+            <li class="w-full whitespace-nowrap">
                 <button class="px-6 py-2 w-full text-left outline-none outline-0 focus-visible:ring-2 focus-visible:ring-slate-700 focus-visible:bg-sky-500 hover:bg-sky-500 transition-all">
                     <i class="fa-solid fa-house mr-3"></i>
                     <span class="hidden md:inline">Home</span>
@@ -115,15 +115,68 @@
             </li>
         </ul>
     </aside>
-    <main class="grid grid-cols-[minmax(0,_4fr)_minmax(0,_1fr)]">
+    <main class="bg-slate-200 p-4 grid grid-cols-[minmax(0,_4fr)_minmax(0,_1fr)] gap-6 order-1">
         <div>
-            <h2>Your Projects</h2>
-            <article>Super cool project</article>
-            <article>Less cool project</article>
-            <article>Impossible app</article>
-            <article>Easy Peasy App</article>
-            <article>Ad Blocker</article>
-            <article>Money Maker</article>
+            <h2 class="font-bold">Your Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 auto-rows-fr gap-6 pt-4">
+                <article class="bg-white border-l-8 border-l-amber-400 py-8 px-4 rounded-lg shadow grid grid-rows-[3ch]">
+                    <h3 class="font-bold">Super cool project</h3>
+                    <p class="text-sm text-slate-500 text-ellipsis">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus rem fugiat voluptatum enim! Sunt quidem fuga pariatur, ad assumenda vel earum! Animi perspiciatis labore doloremque amet arum ex necessitatibus tempore!
+                    </p>
+                    <div class="flex justify-end gap-4 text-lg">
+                        <button class="outline-none outline-0 hover:text-slate-600 focus-visible:text-slate-600 focus-visible:ring-2 focus-visible:ring-slate-700"><i class="fa-solid fa-heart-circle-plus"></i></button>
+                        <button class="outline-none outline-0 hover:text-slate-600 focus-visible:text-slate-600 focus-visible:ring-2 focus-visible:ring-slate-700"><i class="fa-solid fa-eye"></i></button>
+                        <button class="outline-none outline-0 hover:text-slate-600 focus-visible:text-slate-600 focus-visible:ring-2 focus-visible:ring-slate-700"><i class="fa-solid fa-share-nodes"></i></button>
+                    </div>
+                </article>
+                <article class="bg-white border-l-8 border-l-amber-400 py-8 px-4 rounded-lg shadow grid grid-rows-[3ch]">
+                    <h3 class="font-bold">Less cool project</h3>
+                    <p class="text-sm text-slate-500 text-ellipsis">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima porro sapiente vero ducimus sunt perferendis, nihil iure sed natus. Impedit autem quaerat tempora, odio perspiciatis omnis inventore? Commodi, accusamus eos.
+                    </p>
+                    <div class="flex justify-end gap-4 text-lg">
+                        <button class="outline-none outline-0 hover:text-slate-600 focus-visible:text-slate-600 focus-visible:ring-2 focus-visible:ring-slate-700"><i class="fa-solid fa-heart-circle-plus"></i></button>
+                        <button class="outline-none outline-0 hover:text-slate-600 focus-visible:text-slate-600 focus-visible:ring-2 focus-visible:ring-slate-700"><i class="fa-solid fa-eye"></i></button>
+                        <button class="outline-none outline-0 hover:text-slate-600 focus-visible:text-slate-600 focus-visible:ring-2 focus-visible:ring-slate-700"><i class="fa-solid fa-share-nodes"></i></button>
+                    </div>
+                </article class="bg-white border-l-8 border-l-amber-400 py-8 px-4 rounded-lg shadow grid grid-rows-[3ch]">
+                <article class="bg-white border-l-8 border-l-amber-400 py-8 px-4 rounded-lg shadow grid grid-rows-[3ch]">
+                    <h3 class="font-bold">Impossible app</h3>
+                    <p class="text-sm text-slate-500 text-ellipsis">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam eligendi quod culpa asperiores soluta optio nesciunt beatae voluptates numquam. Qui ipsa accusamus repellat voluptatem, eveniet natus eligendi suscipit dolorum laudantium.</p>
+                    <div class="flex justify-end gap-4 text-lg">
+                        <button class="outline-none outline-0 hover:text-slate-600 focus-visible:text-slate-600 focus-visible:ring-2 focus-visible:ring-slate-700"><i class="fa-solid fa-heart-circle-plus"></i></button>
+                        <button class="outline-none outline-0 hover:text-slate-600 focus-visible:text-slate-600 focus-visible:ring-2 focus-visible:ring-slate-700"><i class="fa-solid fa-eye"></i></button>
+                        <button class="outline-none outline-0 hover:text-slate-600 focus-visible:text-slate-600 focus-visible:ring-2 focus-visible:ring-slate-700"><i class="fa-solid fa-share-nodes"></i></button>
+                    </div>
+                </article>
+                <article class="bg-white border-l-8 border-l-amber-400 py-8 px-4 rounded-lg shadow grid grid-rows-[3ch]">
+                    <h3 class="font-bold">Easy Peasy App</h3>
+                    <p class="text-sm text-slate-500 text-ellipsis">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum optio asperiores quasi sint vitae tenetur repellendus. Minus eum ducimus perferendis assumenda ullam, asperiores natus ipsa eius quo aliquid mollitia? Veniam!</p>
+                    <div class="flex justify-end gap-4 text-lg">
+                        <button class="outline-none outline-0 hover:text-slate-600 focus-visible:text-slate-600 focus-visible:ring-2 focus-visible:ring-slate-700"><i class="fa-solid fa-heart-circle-plus"></i></button>
+                        <button class="outline-none outline-0 hover:text-slate-600 focus-visible:text-slate-600 focus-visible:ring-2 focus-visible:ring-slate-700"><i class="fa-solid fa-eye"></i></button>
+                        <button class="outline-none outline-0 hover:text-slate-600 focus-visible:text-slate-600 focus-visible:ring-2 focus-visible:ring-slate-700"><i class="fa-solid fa-share-nodes"></i></button>
+                    </div>
+                </article>
+                <article class="bg-white border-l-8 border-l-amber-400 py-8 px-4 rounded-lg shadow grid grid-rows-[3ch]">
+                    <h3 class="font-bold">Ad Blocker</h3>
+                    <p class="text-sm text-slate-500 text-ellipsis">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic debitis sit facere saepe error. Laboriosam pariatur eum neque impedit, explicabo dignissimos nostrum voluptates ipsam totam numquam culpa qui consequuntur harum?</p>
+                    <div class="flex justify-end gap-4 text-lg">
+                        <button class="outline-none outline-0 hover:text-slate-600 focus-visible:text-slate-600 focus-visible:ring-2 focus-visible:ring-slate-700"><i class="fa-solid fa-heart-circle-plus"></i></button>
+                        <button class="outline-none outline-0 hover:text-slate-600 focus-visible:text-slate-600 focus-visible:ring-2 focus-visible:ring-slate-700"><i class="fa-solid fa-eye"></i></button>
+                        <button class="outline-none outline-0 hover:text-slate-600 focus-visible:text-slate-600 focus-visible:ring-2 focus-visible:ring-slate-700"><i class="fa-solid fa-share-nodes"></i></button>
+                    </div>
+                </article>
+                <article class="bg-white border-l-8 border-l-amber-400 py-8 px-4 rounded-lg shadow grid grid-rows-[3ch]">
+                    <h3 class="font-bold">Money Maker</h3>
+                    <p class="text-sm text-slate-500 text-ellipsis">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore beatae laudantium temporibus incidunt nesciunt aut, libero reprehenderit, animi exercitationem asperiores laborum veritatis distinctio porro, blanditiis velit harum nostrum explicabo omnis.</p>
+                    <div class="flex justify-end gap-4 text-lg">
+                        <button class="outline-none outline-0 hover:text-slate-600 focus-visible:text-slate-600 focus-visible:ring-2 focus-visible:ring-slate-700"><i class="fa-solid fa-heart-circle-plus"></i></button>
+                        <button class="outline-none outline-0 hover:text-slate-600 focus-visible:text-slate-600 focus-visible:ring-2 focus-visible:ring-slate-700"><i class="fa-solid fa-eye"></i></button>
+                        <button class="outline-none outline-0 hover:text-slate-600 focus-visible:text-slate-600 focus-visible:ring-2 focus-visible:ring-slate-700"><i class="fa-solid fa-share-nodes"></i></button>
+                    </div>
+                </article>
+            </div>
         </div>
         <div class="border border-red-600">
             <h2>Announcements</h2>
