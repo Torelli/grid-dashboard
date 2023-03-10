@@ -7,7 +7,7 @@
     <title>Grid Dashboard</title>
     <link rel="stylesheet" href="./output.css">
 </head>
-<body class="grid grid-cols-[minmax(0,_1fr)_minmax(0,_5fr)] md:grid-cols-[minmax(0,_1fr)_minmax(0,_4fr)] text-slate-700">
+<body class="bg-slate-200 grid grid-cols-[minmax(0,_1fr)_minmax(0,_5fr)] md:grid-cols-[minmax(0,_1fr)_minmax(0,_4fr)] text-slate-700">
     <header class="bg-white shadow-lg col-start-2 p-4 md:px-8 md:py-4 sticky top-0 md:relative">
         <div class="flex gap-4 md:gap-56 flex-wrap-reverse">
             <div class="flex gap-2 md:gap-4 items-center md:flex-1">
@@ -49,7 +49,7 @@
             </div>
         </div>
     </header>
-    <aside class="bg-sky-600 text-lg text-white font-bold fixed h-screen md:h-auto md:relative flex flex-col gap-8 row-start-1 row-end-2 md:row-end-3 order-2">
+    <aside class="bg-sky-600 text-lg text-white font-bold fixed h-screen md:h-[clamp(100vh,100%,100%)] md:relative flex flex-col gap-8 row-start-1 row-end-2 md:row-end-3 order-2">
         <div class="py-6 px-3 md:p-6">
             <h1 class="text-2xl">
                 <i class="fa-solid fa-wave-square text-3xl"></i>
@@ -115,10 +115,10 @@
             </li>
         </ul>
     </aside>
-    <main class="bg-slate-200 p-4 grid grid-cols-1 md:grid-cols-[minmax(0,_3fr)_minmax(0,_1fr)] col-start-2 gap-6 order-1">
-        <div>
+    <main class="p-4 grid grid-cols-1 md:grid-cols-[minmax(0,_3fr)_minmax(0,_1fr)] col-start-2 gap-6 order-1">
+        <div class="flex flex-col">
             <h2 class="font-bold mb-2">Your Projects</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 auto-rows-fr gap-6">
+            <div class="flex-1 grid grid-cols-1 md:grid-cols-2 auto-rows-fr gap-6">
                 <article class="bg-white border-l-8 border-l-amber-400 pt-8 pb-4 px-4 rounded-lg shadow">
                     <h3 class="font-bold">Super cool project</h3>
                     <p class="text-sm text-slate-500 line-clamp-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus rem fugiat voluptatum enim! Sunt quidem fuga pariatur, ad assumenda vel earum! Animi perspiciatis labore doloremque amet arum ex necessitatibus tempore!
@@ -178,7 +178,7 @@
                 </article>
             </div>
         </div>
-        <div class="hidden md:block">
+        <div class="hidden md:flex md:flex-col">
             <h2 class="font-bold mb-2">Announcements</h2>
             <div class="bg-white shadow-lg rounded-lg px-6 py-2">
                 <article class="h-1/3 border-b border-b-slate-300 py-4">
@@ -195,8 +195,8 @@
                 </article>
             </div>
             <h2 class="font-bold mb-2 mt-8">Trending</h2>
-            <div class="bg-white shadow-lg rounded-lg px-6 py-8 flex flex-col gap-8">
-                <div class="grid grid-cols-[minmax(0,_1fr)_minmax(0,_4fr)] gap-4">
+            <div class="bg-white shadow-lg rounded-lg flex-1 px-6 py-8 flex flex-col justify-around gap-4">
+                <div class="grid grid-cols-[minmax(0,_1fr)_minmax(0,_4fr)] gap-4 cursor-pointer">
                     <img
                         src="https://api.dicebear.com/5.x/bottts-neutral/svg?seed=Tegan&radius=50&flip=false"
                         alt="avatar"
@@ -206,7 +206,7 @@
                         <p class="text-slate-500 text-xs">World Peace Builder</p>
                     </div>
                 </div>
-                <div class="grid grid-cols-[minmax(0,_1fr)_minmax(0,_4fr)] gap-4">
+                <div class="grid grid-cols-[minmax(0,_1fr)_minmax(0,_4fr)] gap-4 cursor-pointer">
                     <img
                         src="https://api.dicebear.com/5.x/bottts-neutral/svg?seed=Morgan&radius=50&flip=false"
                         alt="avatar"
@@ -216,7 +216,7 @@
                         <p class="text-slate-500 text-xs">Super Cool Project</p>
                     </div>
                 </div>
-                <div class="grid grid-cols-[minmax(0,_1fr)_minmax(0,_4fr)] gap-4">
+                <div class="grid grid-cols-[minmax(0,_1fr)_minmax(0,_4fr)] gap-4 cursor-pointer">
                     <img
                         src="https://api.dicebear.com/5.x/bottts-neutral/svg?seed=Kendall&radius=50&flip=false"
                         alt="avatar"
@@ -226,7 +226,7 @@
                         <p class="text-slate-500 text-xs">Life Changing App</p>
                     </div>
                 </div>
-                <div class="grid grid-cols-[minmax(0,_1fr)_minmax(0,_4fr)] gap-4">
+                <div class="grid grid-cols-[minmax(0,_1fr)_minmax(0,_4fr)] gap-4 cursor-pointer">
                     <img
                         src="https://api.dicebear.com/5.x/bottts-neutral/svg?seed=Alex&radius=50&flip=false"
                         alt="avatar"
